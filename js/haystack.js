@@ -16,7 +16,7 @@ var binarySearch = {
   *This function returns an index position for the searchValue in the searchArray provided.
   *The return value defaults to -1 if the searchValue provided doesn't exist in the array.
   *
-  * @param  {integer] searchValue   the array value being searched for
+  * @param  {integer} searchValue   the array value being searched for
   * @param  {Array}  searchArray    the array containin all values to be searched through
   * @return {integer}   index of the searchValue provided. Return value will be -1 if searchValue doesn't exist in array
   **/
@@ -26,7 +26,7 @@ var binarySearch = {
   },
 
   /**
-  * @param  {integer] searchValue   the array value being searched for
+  * @param  {integer} searchValue   the array value being searched for
   * @param  {Array}  searchArray    the array containing all values to be searched through
   * @param {integer} start   the index position from where search commences
   * @param  {integer} end the index position form where search ends
