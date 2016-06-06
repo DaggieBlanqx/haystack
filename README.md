@@ -18,7 +18,8 @@ To get started, include the ``js/haystack.js`` file in your project. Go ahead an
 
 **Initiate the Search**
 
-You initiate the search by passing the ``searchArray`` and ``searchValue`` to the ``Haystack(searchValue, searchArray)`` function. This function may return one of the following values:
+You initiate the search by passing the ``searchArray`` and ``searchValue`` to the ``Haystack(searchValue, searchArray)`` function. This function returns an object ``result`` that has access to useful methods and properties of the library. By invoking the
+``result.hayType()`` the result.needleLocation property will have either of the following:
 * -1: indicating that the ``searchValue`` doesn't exist in the ``searchArray``.
 * Array index position: the array index position of the ``searchValue`` in ``searchArray``.
 
