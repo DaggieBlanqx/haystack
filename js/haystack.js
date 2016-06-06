@@ -8,6 +8,26 @@
 * then proceeds to return the index position of the value provided in the array.
 **/
 
+(function(global){
+  var Haystack = function(needle, hay){
+    return new Haystack.init(needle, hay);
+  }
+
+  Haystack.prototype = {};
+
+  Haystack.init = function(needle, hay){
+    var self = this;
+
+    self.needle = needle;
+    self.hay = hay || [];
+    self.needleLocation = -2;
+  }
+
+  Haystack.init.prototype = Haystack.prototype;
+
+  global.Haystack = Haystack;
+
+}(window));
 
 var binarySearch = {
   arrayPosition: -2,
