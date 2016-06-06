@@ -16,21 +16,7 @@
         213, 215, 217, 221, 225, 227, 229,231, 235, 512, 546, 555, 556
       ];
 
-      for (var i = 0; i < searchArray.length; i++) {
-        searchValue = searchArray[i];
-
-        var result = $moo(searchValue, searchArray);
-        result.hayType();
-
-        if (result.needleLocation !== -1) {
-          console.log("The array position of item " + searchValue + " is " + result.needleLocation);
-        }
-        else {
-          console.log("Item " + searchValue + " does not exist in this array");
-        }
-      } /**
-
-      var result = $moo(searchValue, searchArray);
+      var result = Haystack(searchValue, searchArray);
       result.hayType();
 
       if (result.needleLocation !== -1) {
@@ -38,8 +24,7 @@
       }
       else {
         console.log("Item " + searchValue + " does not exist in this array");
-      }**/
-
+      }
 
       </script>
 
